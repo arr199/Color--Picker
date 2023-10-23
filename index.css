@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+ 
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    font-family: Inter;
+    color: var(--gray-700, #374151);
+     background-color: rgb(136, 138, 139);
+   
+}
+
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 1.25em 0;
+    margin: 3.125em auto 3.125em auto;
+    border: 3px solid rgb(100, 100, 100);
+    border-radius: 5px;
+    background:  #FFF;
+ 
+    
+}
+
+
+
+
+
+.container{
+    
+    width: max-content;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.625em;
+    padding: 0 1.25em;
+    margin:  10px 0;
+   
+}
+
+select{
+    width: 200px;
+    padding: .5em;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+select:hover{
+    transition-duration: .3s;
+    scale: 1.04;
+    color: whitesmoke;
+    background-color: #525151;
+    font-weight: bold;
+}
+
+#get-btn{
+
+    cursor: pointer;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    transition: .3s;
+
+}
+
+#get-btn:hover{
+
+    transition-duration: .3s;
+    background-color: #525151;
+    color: whitesmoke;
+    font-weight: bold;
+    scale: 1.1;
+}
+
+#get-btn:hover::after{
+
+    transition-duration: .3s;
+}
+
+
+#get-btn:active{
+    transition: .1s;
+
+    transform: translateY(2px);
+    
+}
+
+#color-input{
+   height: 35px;
+   border-radius: 6px;
+   border: 1px solid #D1D5DB;
+    cursor: pointer;
+    transition: .3s;
+ 
+
+}
+
+#color-input:hover{
+    transition: .3s;
+    scale: 1.1;
+    background: rgb(61, 60, 60);
+    
+}
+
+#color-input:active{
+    transform: translateY(2px);
+
+}
+
+
+
+
+#colors {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 250px 30px;
+    row-gap: 0.625em;
+ 
+
+    
+    
+    
+}
+
+hr{
+cursor: pointer;
+transition: .3s;
+   
+}
+
+hr:active{
+   
+    cursor: copy;
+}
+
+hr:hover{
+    transition: .3s;
+    scale: 1.03;
+    border: 2px solid black;
+
+}
+
+p{
+color: #2B283A;
+font-size: 0.75rem;
+font-weight: bold;
+}
+
+.color{
+  
+    width: 100%;
+    height: 100%;
+}
+
+.color-hex{
+    grid-row: 2;
+
+}
+
+
+
+
+
+.clipboard-message{
+    font-size: 0.625rem;
+    width: 80px;
+    height: 40px;
+    background-color:rgb(255, 253, 253);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    margin: auto;
+    
+   
+   
+    
+
+}
+
+
+
+
+.clipboard-message p{
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+   
+   
+   
+
+}
